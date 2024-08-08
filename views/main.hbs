@@ -1,0 +1,14 @@
+<h2>List of my favorite friends</h2>
+{{> lovedFriends}}
+
+<h2>List of my favorite foods</h2>
+{{> lovedFoods}}
+
+<h2>List of suggested champions</h2>
+{{#if listExists}}
+<ul>
+    {{#each suggestedChamps}}
+    <li class={{this.lane}}>{{this.name}}</li>
+    {{/each}}
+</ul>
+{{/if}}
